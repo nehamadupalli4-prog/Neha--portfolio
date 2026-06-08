@@ -1,0 +1,17 @@
+/* ─── CONTACT ─── */
+#contact { text-align: center; }
+.contact-inner { max-width: 600px; margin: 0 auto; }
+.contact-inner p { color: var(--muted); line-height: 1.8; margin-bottom: 2.5rem; }
+
+.contact-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+
+.contact-link {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  padding: 0.9rem 1.6rem;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius-md); color: var(--text);
+  font-size: 0.9rem; font-weight: 500;
+  transition: border-color var(--transition), transform var(--transition), background var(--transition);
+}
+.contact-link:hover { border-color: var(--accent); background: rgba(167,139,250,0.07); transform: translateY(-3px); }
+.contact-link svg { width: 18px; height: 18px; flex-shrink: 0; }

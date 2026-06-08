@@ -1,0 +1,25 @@
+/* ─── CERTIFICATIONS ─── */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.cert-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 1.8rem;
+  position: relative; overflow: hidden;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.cert-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+}
+
+.cert-card:hover { transform: translateY(-5px); border-color: rgba(167,139,250,0.4); }
+
+.cert-icon { font-size: 2rem; margin-bottom: 1rem; }
+.cert-name { font-family: var(--font-display); font-weight: 700; font-size: 1rem; margin-bottom: 0.3rem; }
+.cert-issuer { color: var(--muted); font-size: 0.84rem; }

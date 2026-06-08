@@ -1,0 +1,41 @@
+/* ─── ABOUT SECTION ─── */
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 5rem; align-items: center;
+}
+
+.about-text p {
+  color: var(--subtle); line-height: 1.9;
+  margin-bottom: 1rem; font-size: 1rem;
+}
+
+.info-pills {
+  display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.5rem;
+}
+
+.info-pill {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 0.4rem 0.8rem;
+  font-size: 0.82rem; color: var(--muted);
+}
+
+.info-pill .dot {
+  width: 5px; height: 5px;
+  background: var(--accent2); border-radius: 50%;
+}
+
+.about-stats { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.stat-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.8rem;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.stat-card:hover { border-color: rgba(167,139,250,0.4); transform: translateX(4px); }
+
+.stat-card .num {
+  font-family: var(--font-display);
+  font-size: 2.5rem; font-weight: 800; color: var(--accent);
+}
+.stat-card .desc { color: var(--muted); font-size: 0.88rem; margin-top: 0.2rem; }

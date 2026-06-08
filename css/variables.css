@@ -1,0 +1,30 @@
+/* ─── DESIGN TOKENS ─── */
+:root {
+  /* Colors */
+  --bg:       #0a0a0f;
+  --surface:  #13131a;
+  --border:   #1e1e2e;
+  --card:     #0f0f18;
+  --accent:   #a78bfa;
+  --accent2:  #38bdf8;
+  --accent3:  #f472b6;
+  --text:     #e2e8f0;
+  --muted:    #64748b;
+  --subtle:   #94a3b8;
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* Spacing */
+  --section-pad-x: 6%;
+  --section-pad-y: 6rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Transitions */
+  --transition: 0.25s ease;
+}
